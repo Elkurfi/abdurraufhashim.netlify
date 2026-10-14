@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdurrauf Hashim | Research, Data Analytics, MEL & Field Operations</title>
+    <meta name="description" content="Official Portfolio & International CV of Abdurrauf Hashim — Research, Data Analytics & Monitoring (MEL) Professional, Field Operations Manager, and AI & Digital Strategist in Kaduna, Nigeria.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        },
+                        accent: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #070b12;
+            color: #f1f5f9;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.78);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-nav {
+            background: rgba(7, 11, 18, 0.88);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #34d399 0%, #38bdf8 50%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .portrait-frame {
+            background: radial-gradient(circle at 50% 35%, rgba(16, 185, 129, 0.20) 0%, rgba(0, 0, 0, 0.98) 72%);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-slate-950">
+
+    <!-- Top Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-40 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-11 h-11 rounded-xl overflow-hidden bg-black border border-brand-500/40 flex items-center justify-center shadow-lg shadow-brand-500/10">
+                    <img id="nav-avatar" src="IMG_20240322_115946_407-removebg-preview.png" alt="Abdurrauf Hashim" class="w-full h-full object-cover object-top" onerror="this.style.display='none'; document.getElementById('nav-fallback').style.display='flex';">
+                    <div id="nav-fallback" class="hidden w-full h-full bg-gradient-to-br from-brand-500 to-sky-500 items-center justify-center text-slate-950 font-display font-bold text-lg">
+                        AH
+                    </div>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-base sm:text-lg tracking-tight text-white block leading-none">Abdurrauf Hashim</span>
+                    <span class="text-xs text-slate-400 font-mono">Research • Data & MEL • Operations</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <a href="#spotlight" class="hover:text-brand-400 transition">In Action</a>
+                <a href="#expertise" class="hover:text-brand-400 transition">Competencies</a>
+                <a href="#projects" class="hover:text-brand-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-brand-400 transition">Experience</a>
+                <button onclick="openCVModal()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-brand-500/40 text-brand-400 font-semibold inline-flex items-center gap-2 transition">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    International CV
+                </button>
+                <a href="#contact" class="px-4 py-2 rounded-lg bg-brand-500 hover:bg-brand-400 text-slate-950 font-semibold transition shadow-lg shadow-brand-500/20">
+                    Contact Me
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Triggers -->
+            <div class="flex items-center gap-2 lg:hidden">
+                <button onclick="openCVModal()" class="px-3 py-1.5 rounded-lg bg-brand-500/15 border border-brand-500/40 text-brand-400 text-xs font-semibold inline-flex items-center gap-1.5">
+                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                    CV
+                </button>
+                <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#spotlight" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">Field & Video Spotlight</a>
+            <a href="#expertise" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">Core Competencies</a>
+            <a href="#projects" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">Selected Projects</a>
+            <a href="#experience" class="block py-2 text-slate-300 hover:text-brand-400 font-medium">Experience & Education</a>
+            <button onclick="openCVModal()" class="w-full py-2.5 rounded-lg bg-slate-800 border border-brand-500/40 text-brand-400 font-semibold text-sm flex items-center justify-center gap-2">
+                <i data-lucide="file-check-2" class="w-4 h-4"></i>
+                View / Download International CV
+            </button>
+            <a href="#contact" class="block text-center py-2.5 rounded-lg bg-brand-500 text-slate-950 font-semibold text-sm">
+                Contact Me
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Multi-View Switcher -->
+    <section class="relative pt-28 pb-20 md:pt-36 md:pb-24 overflow-hidden">
+        <div class="absolute top-20 left-1/3 -translate-x-1/2 w-[650px] h-[350px] bg-brand-500/15 blur-[140px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Executive Pitch & CTAs -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700 text-brand-400 text-xs font-medium mb-6">
+                        <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+                        Kaduna, Nigeria • Research, Data Analytics (MEL), Field Ops & AI Solutions
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.08] text-white mb-6">
+                        Turning <span class="gradient-text">Field Data Into Evidence</span>, Decisions & Community Impact.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-6">
+                        I am <strong class="text-white">Abdurrauf Hashim</strong>—a Research, Data Analytics & Monitoring (MEL) Professional and Operations Leader. Combining <strong class="text-white">4+ years of public health, WASH, immunization, and environmental research</strong> (supporting UNICEF, NOA, and NEWMAP initiatives) with <strong class="text-white">10+ years of construction, procurement, and ICT training leadership</strong>.
+                    </p>
+
+                    <!-- Quote Highlight from Video Pitch -->
+                    <blockquote class="p-4 rounded-xl bg-slate-900/90 border-l-4 border-brand-500 text-slate-300 text-sm italic mb-8">
+                        "Working close to the people behind the data—turning data into evidence, evidence into better decisions, and better decisions into impact."
+                    </blockquote>
+
+                    <!-- Primary Action Buttons -->
+                    <div class="flex flex-wrap items-center gap-3.5">
+                        <button onclick="openCVModal()" class="px-6 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold inline-flex items-center gap-2 transition shadow-lg shadow-brand-500/25">
+                            <i data-lucide="file-text" class="w-5 h-5"></i>
+                            Open International CV (1-Click PDF)
+                        </button>
+                        <button onclick="switchHeroView('video')" class="px-5 py-3.5 rounded-xl glass-card hover:border-brand-500/50 text-white font-medium inline-flex items-center gap-2 transition">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-accent-400"></i>
+                            Watch Video Pitch
+                        </button>
+                        <a href="#projects" class="px-5 py-3.5 rounded-xl glass-card hover:border-slate-600 text-slate-300 hover:text-white font-medium inline-flex items-center gap-2 transition">
+                            Explore Projects
+                        </a>
+                    </div>
+
+                    <!-- Verified Metrics Bar -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-800/80">
+                        <div>
+                            <p class="font-display text-2xl sm:text-3xl font-bold text-white">4+ Yrs</p>
+                            <p class="text-xs text-slate-400 mt-1">Research, Public Health & MEL</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-2xl sm:text-3xl font-bold text-brand-400">10+ Yrs</p>
+                            <p class="text-xs text-slate-400 mt-1">Operations, Site & ICT Leadership</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-2xl sm:text-3xl font-bold text-sky-400">3 Degrees</p>
+                            <p class="text-xs text-slate-400 mt-1">HND Ops Mgmt • ND Comp Eng</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-2xl sm:text-3xl font-bold text-accent-400">4 Languages</p>
+                            <p class="text-xs text-slate-400 mt-1">English, Hausa, Ajami & Arabic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive 3-View Media Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <div class="absolute -inset-1 bg-gradient-to-tr from-brand-500/40 via-sky-500/20 to-accent-500/40 rounded-3xl blur-xl opacity-70"></div>
+                        
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-700/80 portrait-frame shadow-2xl bg-black">
+                            
+                            <!-- Interactive View Switcher Tabs -->
+                            <div class="p-2 bg-slate-950/90 border-b border-slate-800 grid grid-cols-3 gap-1.5 text-xs font-semibold">
+                                <button id="tab-portrait" onclick="switchHeroView('portrait')" class="py-2 px-2 rounded-lg bg-brand-500 text-slate-950 flex items-center justify-center gap-1.5 transition">
+                                    <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
+                                    Portrait
+                                </button>
+                                <button id="tab-field" onclick="switchHeroView('field')" class="py-2 px-2 rounded-lg bg-slate-900 text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition">
+                                    <i data-lucide="users" class="w-3.5 h-3.5 text-sky-400"></i>
+                                    Field Action
+                                </button>
+                                <button id="tab-video" onclick="switchHeroView('video')" class="py-2 px-2 rounded-lg bg-slate-900 text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition">
+                                    <i data-lucide="video" class="w-3.5 h-3.5 text-accent-400"></i>
+                                    Video Pitch
+                                </button>
+                            </div>
+
+                            <!-- VIEW 1: Studio Portrait -->
+                            <div id="view-portrait" class="relative h-[420px] flex items-end justify-center bg-black overflow-hidden">
+                                <img 
+                                    id="hero-portrait-img" 
+                                    src="IMG_20240322_115946_407-removebg-preview.png" 
+                                    alt="Abdurrauf Hashim Executive Portrait" 
+                                    class="w-full h-full object-contain object-bottom transition duration-500"
+                                >
+                                <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black via-black/75 to-transparent pointer-events-none"></div>
+                                <div class="absolute bottom-4 inset-x-5 flex items-end justify-between z-10">
+                                    <div>
+                                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase bg-brand-500/20 text-brand-400 border border-brand-500/30">Executive Profile</span>
+                                        <p class="font-display font-bold text-white text-lg mt-1">Abdurrauf Hashim</p>
+                                        <p class="text-xs text-slate-300">Kaduna, Nigeria • +234 803 856 8785</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- VIEW 2: Field Facilitation (UNICEF~2.jpg) -->
+                            <div id="view-field" class="hidden relative h-[420px] bg-slate-950 overflow-hidden">
+                                <img 
+                                    id="hero-field-img" 
+                                    src="UNICEF~2.jpg" 
+                                    alt="Abdurrauf Hashim Facilitating Community Research Session" 
+                                    class="w-full h-full object-cover object-center transition duration-500"
+                                >
+                                <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none"></div>
+                                <div class="absolute bottom-4 inset-x-5 z-10">
+                                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono uppercase bg-sky-500/20 text-sky-300 border border-sky-500/30">Participatory Community Research</span>
+                                    <p class="font-display font-bold text-white text-base mt-1">Community Health & Erosion Barrier Analysis</p>
+                                    <p class="text-xs text-slate-300">Facilitating FGD & stakeholder co-design (Gayawa III)</p>
+                                </div>
+                            </div>
+
+                            <!-- VIEW 3: Video Pitch (DSFP Video Submission.mp4) -->
+                            <div id="view-video" class="hidden relative h-[420px] bg-black flex flex-col justify-between overflow-hidden">
+                                <video 
+                                    id="hero-video-player" 
+                                    controls 
+                                    class="w-full h-[345px] object-contain bg-black"
+                                    poster="IMG_20240322_115946_407-removebg-preview.png"
+                                >
+                                    <source src="DSFP Video Submission.mp4" type="video/mp4">
+                                    <source src="VID_20260410_173930.mp4" type="video/mp4">
+                                </video>
+                                <div class="p-3.5 bg-slate-950 border-t border-slate-800 flex items-center justify-between">
+                                    <div>
+                                        <p class="text-xs font-bold text-white">Data Science & Public Health Pitch (1:58)</p>
+                                        <p class="text-[11px] text-slate-400">Immunization (NOA/UNICEF), WASH & AI Impact</p>
+                                    </div>
+                                    <span class="px-2 py-1 rounded text-[10px] font-mono bg-accent-500/15 text-accent-400">DSFP 6.0</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Angle Field & Video Spotlight Section -->
+    <section id="spotlight" class="py-20 bg-slate-900/50 border-y border-slate-800/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <p class="text-brand-400 font-mono text-xs uppercase tracking-widest mb-2">Visual Evidence & Field Presence</p>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Three Perspectives of My Work</h2>
+                </div>
+                <p class="text-sm text-slate-400 max-w-md">
+                    From grassroots community facilitation and participatory research to executive data storytelling and technical leadership.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1: Studio Executive Identity -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border border-slate-800 hover:border-brand-500/40 transition">
+                    <div>
+                        <div class="h-72 bg-black flex items-end justify-center overflow-hidden relative">
+                            <img id="spotlight-portrait" src="IMG_20240322_115946_407-removebg-preview.png" alt="Abdurrauf Hashim Portrait" class="h-full w-full object-contain object-bottom">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-mono uppercase bg-slate-900/90 text-brand-400 border border-brand-500/30">
+                                01 • Executive Identity
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-lg font-bold text-white mb-2">Multidisciplinary Leadership</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Bridging analytical rigor (Power BI, Excel, SQL, Python) with over a decade of operational management, procurement governance, and bilingual communication in English, Hausa, and Hausa Ajami.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span>Kaduna State, Nigeria</span>
+                        <span class="text-brand-400 font-mono">@abdurraufhashim</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Field Facilitation (UNICEF~2.jpg) -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border border-slate-800 hover:border-sky-500/40 transition">
+                    <div>
+                        <div class="h-72 bg-slate-950 overflow-hidden relative">
+                            <img id="spotlight-field" src="UNICEF~2.jpg" alt="Community Facilitation & Research" class="h-full w-full object-cover object-center">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-mono uppercase bg-slate-900/90 text-sky-400 border border-sky-500/30">
+                                02 • Participatory Fieldwork
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-lg font-bold text-white mb-2">Community Facilitation & FGD Moderation</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Leading participatory barrier analysis sessions addressing critical community questions on public health promotion, project sustainability, and environmental erosion mitigation across Northern Nigeria.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span>UNICEF / NOA / NEWMAP Fieldwork</span>
+                        <span class="text-sky-400 font-mono">FGD & KII Lead</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Video Pitch -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border border-slate-800 hover:border-accent-500/40 transition">
+                    <div>
+                        <div class="h-72 bg-black overflow-hidden relative flex items-center justify-center">
+                            <video id="spotlight-video" controls poster="IMG_20240322_115946_407-removebg-preview.png" class="h-full w-full object-contain">
+                                <source src="DSFP Video Submission.mp4" type="video/mp4">
+                                <source src="VID_20260410_173930.mp4" type="video/mp4">
+                            </video>
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-mono uppercase bg-slate-900/90 text-accent-400 border border-accent-500/30 pointer-events-none">
+                                03 • Direct Video Statement
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-lg font-bold text-white mb-2">Evidence-Based Public Health & AI Vision</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Direct overview of field experience with the Kano State Primary Health Care Management Board, NOA, Ministry of Health, and UNICEF on Gender Mainstreaming in Immunization, malnutrition, and WASH datasets.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span>Duration: 01:58</span>
+                        <span class="text-accent-400 font-mono">Data → Evidence → Impact</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section id="expertise" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl mb-14">
+                <p class="text-brand-400 font-mono text-xs uppercase tracking-widest mb-2">Core Competencies</p>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Four Pillars of Professional Impact</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pillar 1 -->
+                <div class="glass-card rounded-2xl p-6 hover:border-brand-500/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-5">
+                        <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Research & MEL Systems</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        Quantitative & qualitative research, Household Surveys, Focus Group Discussions (FGDs), Key Informant Interviews (KIIs), Data Quality Assurance (DQA), and research ethics.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs text-slate-300">
+                        <span class="px-2 py-1 rounded bg-slate-800">MEL / DQA</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">FGDs & KIIs</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">Survey Design</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="glass-card rounded-2xl p-6 hover:border-sky-500/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-5">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Data Analytics & CAPI Tools</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        Digital data collection, GPS verification, cleaning, validation, and interactive dashboard storytelling for health, humanitarian, and enterprise datasets.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs text-slate-300">
+                        <span class="px-2 py-1 rounded bg-slate-800">KoboToolbox</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">ODK & CommCare</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">Power BI & Excel</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">SQL & Python</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="glass-card rounded-2xl p-6 hover:border-accent-500/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-accent-500/10 border border-accent-500/20 flex items-center justify-center text-accent-400 mb-5">
+                        <i data-lucide="hard-hat" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">Operations, Site & Procurement</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        10+ years directing construction site operations, workforce supervision, supplier procurement, inventory logistics, HSE signage, and 2D/3D architectural floor plans.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs text-slate-300">
+                        <span class="px-2 py-1 rounded bg-slate-800">Site Supervision</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">Procurement</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">HSE Compliance</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="glass-card rounded-2xl p-6 hover:border-purple-500/40 transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-5">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-3">AI, Digital Media & Ajami</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        Certified in AI/ML (3MTT, Baze University, IHS Towers) and Cisco CCNA, delivering digital advocacy, AI video production, and Hausa / Hausa Ajami transcription.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-xs text-slate-300">
+                        <span class="px-2 py-1 rounded bg-slate-800">Generative AI</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">Hausa Ajami</span>
+                        <span class="px-2 py-1 rounded bg-slate-800">CCNA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filterable Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <p class="text-brand-400 font-mono text-xs uppercase tracking-widest mb-2">Portfolio Case Studies</p>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Selected Field, Data & Operations Projects</h2>
+                </div>
+
+                <div class="flex flex-wrap gap-2" id="project-filters">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold bg-brand-500 text-slate-950 transition">All Work</button>
+                    <button data-filter="research" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Public Health & Research</button>
+                    <button data-filter="data" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Data Analytics & BI</button>
+                    <button data-filter="operations" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Operations & Engineering</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Project 1 -->
+                <article class="project-card glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-brand-500/40 transition" data-category="research data">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-brand-400 font-mono mb-3">
+                            <span>NOA • KANO SPHCMB • UNICEF</span>
+                            <span>2024</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Gender Mainstreaming in Immunization & Vaccine Acceptance</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-5">
+                            Moderated Focus Group Discussions (FGDs) across multiple communities in collaboration with the National Orientation Agency, Ministry of Health, and Kano State Primary Health Care Management Board (supported by UNICEF), documenting qualitative gender barriers and ensuring strict informed consent.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-300">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">FGD Moderation</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Vaccine Acceptance</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">UNICEF Supported</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-brand-500/40 transition" data-category="research data">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-brand-400 font-mono mb-3">
+                            <span>HAMMAD TECHNOLOGIES • FIELD M&E</span>
+                            <span>2024</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Prevalence of Acute & Chronic Malnutrition & WASH Assessment</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-5">
+                            Executed household digital surveys using KoboCollect, verified GPS coordinates, performed daily Data Quality Assurance (DQA) checks prior to server submission, and cleaned field datasets for nutritional and WASH reporting.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-300">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">KoboCollect</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">GPS Validation</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">WASH & Nutrition</span>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-sky-500/40 transition" data-category="data">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-sky-400 font-mono mb-3">
+                            <span>DSHUB IMPACT SUMMIT & PORTFOLIO</span>
+                            <span>2025 – 2026</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Public Health & Executive Retail Power BI Dashboards</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-5">
+                            Led healthcare dataset preparation and indicator simplification for national health presentations at the DSHub Impact Summit, and engineered interactive Power BI retail intelligence dashboards with custom DAX measures.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-300">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Power BI & DAX</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Health Storytelling</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Excel</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-purple-500/40 transition" data-category="research">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-purple-400 font-mono mb-3">
+                            <span>NEWMAP / CASHES & UNICEF RESEARCH</span>
+                            <span>2019 – 2024</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Environmental Sustainability, Erosion & Watershed Research</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-5">
+                            Conducted socio-economic household surveys and environmental assessments for the Nigeria Erosion & Watershed Management Project (NEWMAP/CASHES) and community environmental/health research across Kano and Jigawa States.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-300">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">KoboToolbox</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Environmental M&E</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Stakeholder Consultation</span>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-accent-500/40 transition" data-category="operations">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-accent-400 font-mono mb-3">
+                            <span>CONSTRUCTION & PROCUREMENT OPS</span>
+                            <span>2020 – 2026</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Site Operations, 44-Day Field Labor Matrix & HSE Systems</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-5">
+                            Directed construction site supervision at Alkhairy Multipurpose Enterprise, procurement management at Jikamshi Welding Fabrication, 44-day field deployment cost modeling in Sokoto, and 2D/3D architectural floor plan design.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-300">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Operations Mgmt</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Procurement</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">HSE Signage</span>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-sky-500/40 transition" data-category="operations research">
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-sky-400 font-mono mb-3">
+                            <span>SLUMTECH • NDPC • 3MTT KADUNA</span>
+                            <span>2025 – 2026</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-3">Community Digital Inclusion, Privacy & Vision Health</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-5">
+                            Led SlumTech Kaduna State Chapter awareness sessions ("Healthy Eyes, Healthy Digital Habits"), bilingual English/Hausa campaigns for Nigeria Data Protection Week, and technical media support for the 3MTT Kaduna community.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-300">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Community Leadership</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">Bilingual Media</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800">3MTT & SlumTech</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience, Education & Certifications Summary -->
+    <section id="experience" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+                <div>
+                    <p class="text-brand-400 font-mono text-xs uppercase tracking-widest mb-2">Verified Track Record</p>
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Career Timeline & Credentials</h2>
+                </div>
+                <button onclick="openCVModal()" class="px-5 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-xs sm:text-sm inline-flex items-center gap-2 transition self-start md:self-auto shadow-lg shadow-brand-500/20">
+                    <i data-lucide="printer" class="w-4 h-4"></i>
+                    Open Full International CV & Print PDF
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- Left Column: Work Experience -->
+                <div class="lg:col-span-7 space-y-5">
+                    <h3 class="font-display text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-brand-400"></i>
+                        Professional Experience
+                    </h3>
+
+                    <div class="glass-card rounded-2xl p-6">
+                        <div class="flex flex-wrap justify-between gap-2 mb-1">
+                            <h4 class="font-display font-bold text-white text-base">Data Science & Analytics Intern / Health Visualization Lead</h4>
+                            <span class="text-xs font-mono text-brand-400">2025 – Present</span>
+                        </div>
+                        <p class="text-xs text-slate-300 font-medium mb-3">DSHub Nigeria & DSHub Impact Summit</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Clean and validate health, business, and development datasets; build interactive Excel and Power BI dashboards; and lead healthcare data storytelling for non-technical audiences at the DSHub Impact Summit.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6">
+                        <div class="flex flex-wrap justify-between gap-2 mb-1">
+                            <h4 class="font-display font-bold text-white text-base">Field Research Officer, Data Enumerator & FGD Moderator</h4>
+                            <span class="text-xs font-mono text-sky-400">2024</span>
+                        </div>
+                        <p class="text-xs text-slate-300 font-medium mb-3">UNICEF-Supported Project (Kano & Jigawa) • Hammad Technologies • NOA</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Conducted digital household surveys (KoboToolbox/KoboCollect) with GPS validation on acute/chronic malnutrition, WASH, and environmental health; moderated community FGDs on Gender Mainstreaming for Vaccine Acceptance.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6">
+                        <div class="flex flex-wrap justify-between gap-2 mb-1">
+                            <h4 class="font-display font-bold text-white text-base">Site Manager & Procurement Manager</h4>
+                            <span class="text-xs font-mono text-accent-400">2020 – Present</span>
+                        </div>
+                        <p class="text-xs text-slate-300 font-medium mb-3">Alkhairy Multipurpose Enterprise (2022–Present) • Jikamshi Welding Fabrication (2020–2022)</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Supervise construction site operations, workforce deployment, procurement planning, supplier relationships, inventory control, and HSE safety standards compliance.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-6">
+                        <div class="flex flex-wrap justify-between gap-2 mb-1">
+                            <h4 class="font-display font-bold text-white text-base">Research Officer, Regional ICT Supervisor & Electoral Officer</h4>
+                            <span class="text-xs font-mono text-slate-400">2009 – 2023</span>
+                        </div>
+                        <p class="text-xs text-slate-300 font-medium mb-3">NEWMAP/CASHES (2019–2020) • Advanced Cisco Networks (2018–2022) • INEC APO I/II (2019 & 2023) • JNI (2009–2013)</p>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Conducted socio-economic watershed surveys for NEWMAP; supervised regional ICT facilitators across Northern Nigeria; managed voter accreditation for INEC; and taught computer literacy at JNI Computer Institute.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Education, Certifications & Leadership -->
+                <div class="lg:col-span-5 space-y-6">
+                    <h3 class="font-display text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-400"></i>
+                        Academic Qualifications
+                    </h3>
+
+                    <div class="glass-card rounded-2xl p-6 space-y-4 border-l-4 border-l-brand-500">
+                        <div>
+                            <div class="flex justify-between text-xs font-mono text-brand-400">
+                                <span>KADUNA POLYTECHNIC</span>
+                                <span>2023</span>
+                            </div>
+                            <h4 class="font-display font-bold text-white text-base mt-0.5">HND in Production & Operations Management</h4>
+                            <p class="text-xs text-slate-400">Second Class Upper Division Honors</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800">
+                            <div class="flex justify-between text-xs font-mono text-sky-400">
+                                <span>KADUNA POLYTECHNIC</span>
+                                <span>2015</span>
+                            </div>
+                            <h4 class="font-display font-bold text-white text-base mt-0.5">National Diploma (ND) in Computer Engineering</h4>
+                        </div>
+                        <div class="pt-3 border-t border-slate-800">
+                            <div class="flex justify-between text-xs font-mono text-slate-400">
+                                <span>YAHAYA HAMZA INSTITUTE, KADUNA</span>
+                                <span>2010</span>
+                            </div>
+                            <h4 class="font-display font-bold text-white text-base mt-0.5">Ordinary Diploma in Computer Studies</h4>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Card -->
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="font-display text-lg font-bold text-white mb-4 flex items-center gap-2">
+                            <i data-lucide="award" class="w-5 h-5 text-accent-400"></i>
+                            Professional Certifications
+                        </h3>
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+                            <li class="flex items-start gap-2"><span class="text-brand-400">•</span><span><strong>Artificial Intelligence & Machine Learning:</strong> 3MTT, IDEAS / Baze University, & IHS Towers</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-400">•</span><span><strong>Data Analytics & Generative AI Ethics:</strong> DSHub, Hammad Technologies, & LinkedIn Learning</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-400">•</span><span><strong>Networking & Cybersecurity:</strong> Cisco Certified Network Associate (CCNA) & Cyber Threat Management (Cisco)</span></li>
+                            <li class="flex items-start gap-2"><span class="text-brand-400">•</span><span><strong>Digital & Enterprise:</strong> Digital Content Creation (NITDA), Digital Marketing, & Entrepreneurship</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Leadership & Volunteer Card -->
+                    <div class="glass-card rounded-2xl p-6">
+                        <h3 class="font-display text-lg font-bold text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="heart-handshake" class="w-5 h-5 text-purple-400"></i>
+                            Leadership & Community Service
+                        </h3>
+                        <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+                            <li>• <strong>Assistant Supervisor (Data Science Track)</strong> – DSHub</li>
+                            <li>• <strong>Interim Acting Chapter Lead</strong> – SlumTech Kaduna State Chapter</li>
+                            <li>• <strong>Technical Support & Media Volunteer</strong> – 3MTT Kaduna Community</li>
+                            <li>• <strong>Computer Application Instructor</strong> – JNI First Aid Group</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900/60 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 border border-slate-700/60">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    
+                    <div class="lg:col-span-6 space-y-5">
+                        <p class="text-brand-400 font-mono text-xs uppercase tracking-widest">Direct Contact</p>
+                        <h2 class="font-display text-3xl font-bold text-white">Ready for Field, Analytical & Operational Impact.</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Reach out directly for roles and consulting in Research & MEL, Public Health Data Analytics, Field Survey Supervision, Construction Operations, or Hausa/Ajami Localization.
+                        </p>
+
+                        <div class="space-y-3.5 pt-2 text-sm">
+                            <a href="tel:+2348038568785" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-brand-400">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Phone / WhatsApp</p>
+                                    <p class="font-semibold text-white">+234 803 856 8785</p>
+                                </div>
+                            </a>
+
+                            <a href="mailto:hashimabdurrauf@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-sky-400">
+                                    <i data-lucide="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Email Address</p>
+                                    <p class="font-semibold text-white">hashimabdurrauf@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/abdurraufhashim" target="_blank" rel="noopener" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition">
+                                <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-accent-400">
+                                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">LinkedIn Profile</p>
+                                    <p class="font-semibold text-white">linkedin.com/in/abdurraufhashim</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Direct Email Composer -->
+                    <div class="lg:col-span-6">
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Your Name / Organization</label>
+                                <input type="text" id="sender-name" required placeholder="e.g. Dr. Ibrahim Musa / UNICEF / NGO" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Engagement Type</label>
+                                <select id="inquiry-type" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500">
+                                    <option value="Research, MEL & Field Data Collection">Research, MEL & Field Data Collection (Kobo/ODK)</option>
+                                    <option value="Data Analytics & Power BI Reporting">Data Analytics, Cleaning & Power BI Visualization</option>
+                                    <option value="Site Operations & Procurement Management">Site Operations, Construction & Procurement</option>
+                                    <option value="AI, Digital Media & Hausa Ajami Localization">AI Solutions, Digital Media & Hausa Ajami</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Message</label>
+                                <textarea id="sender-message" rows="3" required placeholder="Share details about the role or project..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-brand-500/20">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                Send Direct Email
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© <span id="year"></span> Abdurrauf Hashim. Kaduna, Nigeria.</p>
+            <div class="flex items-center gap-4">
+                <button onclick="openCVModal()" class="text-brand-400 hover:underline font-medium">View International CV</button>
+                <span>•</span>
+                <a href="mailto:hashimabdurrauf@gmail.com" class="hover:text-slate-300">hashimabdurrauf@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         1-CLICK INTERNATIONAL STANDARD CV MODAL & A4 PDF PRINT GENERATOR
+    ====================================================================== -->
+    <div id="cv-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md overflow-y-auto p-3 sm:p-6 md:p-10">
+        <!-- Floating Action Header -->
+        <div class="max-w-4xl mx-auto mb-4 bg-slate-900 border border-slate-700 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-3 sticky top-2 z-50 shadow-2xl">
+            <div class="flex items-center gap-2.5">
+                <div class="w-9 h-9 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center">
+                    <i data-lucide="file-check-2" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h3 class="font-display font-bold text-white text-sm sm:text-base">International Standard Curriculum Vitae (ATS & UN/NGO Ready)</h3>
+                    <p class="text-xs text-slate-400">Formatted for instant A4 PDF export or printing</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2.5">
+                <button onclick="printInternationalCV()" class="px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-xs sm:text-sm inline-flex items-center gap-2 transition shadow-lg">
+                    <i data-lucide="printer" class="w-4 h-4"></i>
+                    Download / Print A4 PDF
+                </button>
+                <button onclick="closeCVModal()" class="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition" title="Close CV Viewer">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- A4 International CV Document Container -->
+        <div id="printable-cv-content" class="max-w-4xl mx-auto bg-white text-slate-900 rounded-2xl shadow-2xl p-6 sm:p-12 font-sans leading-relaxed">
+            
+            <!-- CV Header -->
+            <div class="border-b-2 border-slate-900 pb-5 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-950 uppercase">ABDURRAUF HASHIM</h1>
+                    <p class="text-sm font-semibold text-emerald-800 mt-1">
+                        Research, Data Analytics & MEL Specialist | Field Operations & Procurement Manager | AI & Digital Solutions
+                    </p>
+                    <p class="text-xs text-slate-600 mt-2">
+                        <strong>Location:</strong> Kaduna, Nigeria &nbsp;|&nbsp; 
+                        <strong>Phone:</strong> +234 803 856 8785 &nbsp;|&nbsp; 
+                        <strong>Email:</strong> hashimabdurrauf@gmail.com
+                    </p>
+                    <p class="text-xs text-slate-600 mt-0.5">
+                        <strong>Portfolio:</strong> abdurraufhashim.netlify.app &nbsp;|&nbsp;
+                        <strong>LinkedIn:</strong> linkedin.com/in/abdurraufhashim &nbsp;|&nbsp; 
+                        <strong>Languages:</strong> English (Fluent), Hausa (Native), Hausa Ajami (Specialist), Arabic (Basic)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Executive Summary -->
+            <div class="mb-6">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-slate-950 border-b border-slate-300 pb-1 mb-2">Professional Summary</h2>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Results-driven Research, Data Analytics, and Monitoring, Evaluation & Learning (MEL) Professional with 4+ years of hands-on experience executing quantitative and qualitative studies across public health, immunization, nutrition, WASH, environmental sustainability, and community development programs in Nigeria (including UNICEF, NOA, and NEWMAP-supported interventions). Expert in digital CAPI deployment (KoboToolbox, ODK, CommCare), rigorous Data Quality Assurance (DQA), participatory community facilitation (FGDs/KIIs), and executive BI storytelling (Power BI, Excel, SQL, Python). Backed by 10+ years of leadership in construction site operations, procurement governance, and regional ICT capacity building—bridging grassroots community trust with high-precision analytical execution.
+                </p>
+            </div>
+
+            <!-- Core Competencies Grid -->
+            <div class="mb-6">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-slate-950 border-b border-slate-300 pb-1 mb-2.5">Core Competencies & Technical Arsenal</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-slate-700">
+                    <div><strong>Research & MEL:</strong> Quantitative & Qualitative Surveys, Household Enumeration, FGDs, KIIs, Data Quality Assurance (DQA), Research Ethics & Informed Consent.</div>
+                    <div><strong>Data Analytics & BI:</strong> Data Cleaning & Validation, Dashboard Design, KPI Storytelling, Microsoft Excel (Advanced), Power BI (DAX), SQL, Python (Pandas/NumPy).</div>
+                    <div><strong>Digital CAPI Platforms:</strong> KoboCollect, KoboToolbox, Open Data Kit (ODK), CommCare, Google Forms, GPS Coordinate Verification.</div>
+                    <div><strong>Operations & Leadership:</strong> Construction Site Supervision, Procurement & Supply Chain, Inventory Control, Stakeholder Mobilization, AI Productivity & Hausa Ajami Localization.</div>
+                </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="mb-6">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-slate-950 border-b border-slate-300 pb-1 mb-3">Professional Experience</h2>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Data Science & Analytics Intern</h3>
+                        <span class="text-xs font-semibold text-slate-600">2025 – Present</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">DSHub Nigeria</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Clean, structure, and validate multi-source datasets across public health, commercial enterprise, and development workflows.</li>
+                        <li>Design interactive analytical dashboards and automated visual reports using Microsoft Excel and Power BI to support evidence-based decision-making.</li>
+                        <li>Collaborate with cross-functional technical teams on data quality documentation, indicator tracking, and analytical reporting.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Health Data Visualization Lead</h3>
+                        <span class="text-xs font-semibold text-slate-600">2025</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">DSHub Impact Summit</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Prepared, audited, and transformed complex healthcare datasets into accessible visual narratives for national public health presentations.</li>
+                        <li>Partnered with communication and design teams to translate epidemiological and health service indicators for non-technical policy audiences.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Field Research Officer</h3>
+                        <span class="text-xs font-semibold text-slate-600">2024</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">UNICEF-Supported Research Project | Kano & Jigawa States</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Executed community-based field research investigating environmental sustainability and public health barriers across target LGAs in Kano and Jigawa States.</li>
+                        <li>Deployed structured digital survey instruments via KoboToolbox while enforcing strict research ethics, informed consent, and real-time data quality protocols.</li>
+                        <li>Facilitated participatory community consultations and synthesized field observations into comprehensive project documentation.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Data Analytics Intern / Field Data Enumerator</h3>
+                        <span class="text-xs font-semibold text-slate-600">2024</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">Hammad Technologies & Consultancy Ltd (Project: Acute & Chronic Malnutrition & WASH Assessment)</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Administered digital household surveys using KoboCollect, capturing anthropometric, nutritional, and Water, Sanitation, and Hygiene (WASH) indicators.</li>
+                        <li>Verified household GPS coordinates and executed daily end-of-day Data Quality Assurance (DQA) reviews prior to cloud synchronization.</li>
+                        <li>Cleaned and validated raw field datasets to support preliminary statistical analysis and technical reporting.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Community Facilitator / Focus Group Discussion (FGD) Moderator</h3>
+                        <span class="text-xs font-semibold text-slate-600">2024</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">National Orientation Agency (NOA) / Kano SPHCMB / Ministry of Health (UNICEF Supported)</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Moderated gender-sensitive Focus Group Discussions across diverse communities for the Gender Mainstreaming in Immunization & Vaccine Acceptance initiative.</li>
+                        <li>Transcribed and documented qualitative community perspectives, socio-cultural barriers, and actionable recommendations while safeguarding participant confidentiality.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Site Manager</h3>
+                        <span class="text-xs font-semibold text-slate-600">2022 – Present</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">Alkhairy Multipurpose Enterprise | Kaduna</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Direct end-to-end construction site operations, technical workforce supervision, material inventory control, and daily labor compensation structures.</li>
+                        <li>Coordinate project procurement logistics and enforce Health, Safety, and Environment (HSE) standards across active deployment sites.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Procurement Manager</h3>
+                        <span class="text-xs font-semibold text-slate-600">2020 – 2022</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">Jikamshi Welding Fabrication Nig. Ltd.</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Spearheaded strategic procurement planning, vendor negotiations, material sourcing, and audit-ready inventory documentation.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Research Officer (NEWMAP/CASHES) & Electoral Officer (INEC APO I & II)</h3>
+                        <span class="text-xs font-semibold text-slate-600">2019 – 2023</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">Nigeria Erosion & Watershed Management Project (2019–2020) | INEC (2019 & 2023)</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Conducted household socio-economic and environmental baseline surveys for NEWMAP/CASHES watershed interventions.</li>
+                        <li>Managed high-integrity voter accreditation and electoral result documentation under strict statutory timelines as APO II (2019) and APO I (2023).</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="text-sm font-bold text-slate-900">Facilitator & Regional Supervisor (2018–2022) | Computer Instructor (2009–2013)</h3>
+                        <span class="text-xs font-semibold text-slate-600">2009 – 2022</span>
+                    </div>
+                    <p class="text-xs font-semibold text-emerald-800 mb-1">Advanced Cisco Networks, Abuja | JNI Computer Institute, Kaduna</p>
+                    <ul class="list-disc list-inside text-xs text-slate-700 space-y-1">
+                        <li>Supervised regional ICT training cohorts across Northern Nigeria and delivered foundational networking and digital literacy instruction to hundreds of learners.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education & Certifications -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-4">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-slate-950 border-b border-slate-300 pb-1 mb-2.5">Education</h2>
+                    <ul class="text-xs text-slate-700 space-y-2">
+                        <li><strong>HND, Production & Operations Management</strong> (Upper Credit)<br>Kaduna Polytechnic, Kaduna (2023)</li>
+                        <li><strong>National Diploma (ND), Computer Engineering</strong><br>Kaduna Polytechnic, Kaduna (2015)</li>
+                        <li><strong>Ordinary Diploma, Computer Studies</strong><br>Yahaya Hamza Institute, Kaduna (2010)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-slate-950 border-b border-slate-300 pb-1 mb-2.5">Certifications & Leadership</h2>
+                    <ul class="text-xs text-slate-700 space-y-1.5">
+                        <li>• <strong>AI & Machine Learning:</strong> 3MTT, IDEAS/Baze University, IHS Towers</li>
+                        <li>• <strong>Data Analytics & AI Ethics:</strong> DSHub, Hammad Tech, LinkedIn Learning</li>
+                        <li>• <strong>Networking & Security:</strong> Cisco CCNA & Cyber Threat Management</li>
+                        <li>• <strong>Digital Skills:</strong> NITDA Content Creation & Digital Marketing</li>
+                        <li>• <strong>Leadership:</strong> Asst. Supervisor (DSHub), Interim Lead (SlumTech Kaduna), Media Volunteer (3MTT Kaduna)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-[11px] text-slate-500 border-t border-slate-200 pt-3 flex justify-between">
+                <span>References available upon request.</span>
+                <span>Portfolio & Media Verification: abdurraufhashim.netlify.app</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hero 3-View Switcher (Portrait / Field Action / Video Pitch)
+        function switchHeroView(view) {
+            const views = ['portrait', 'field', 'video'];
+            const videoPlayer = document.getElementById('hero-video-player');
+
+            views.forEach(v => {
+                const viewEl = document.getElementById(`view-${v}`);
+                const tabEl = document.getElementById(`tab-${v}`);
+                if (v === view) {
+                    viewEl.classList.remove('hidden');
+                    tabEl.classList.remove('bg-slate-900', 'text-slate-300');
+                    tabEl.classList.add('bg-brand-500', 'text-slate-950');
+                } else {
+                    viewEl.classList.add('hidden');
+                    tabEl.classList.remove('bg-brand-500', 'text-slate-950');
+                    tabEl.classList.add('bg-slate-900', 'text-slate-300');
+                }
+            });
+
+            if (view !== 'video' && videoPlayer) {
+                videoPlayer.pause();
+            }
+        }
+
+        // CV Modal Controls & Clean A4 PDF Print Generator
+        function openCVModal() {
+            document.getElementById('cv-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCVModal() {
+            document.getElementById('cv-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function printInternationalCV() {
+            const cvContent = document.getElementById('printable-cv-content').innerHTML;
+            const printWin = window.open('', '_blank', 'width=900,height=1100');
+            printWin.document.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Abdurrauf_Hashim_International_CV</title>
+                    <script src="https://cdn.tailwindcss.com"><\/script>
+                    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+                    <style>
+                        body { font-family: 'Inter', sans-serif; color: #0f172a; background: #ffffff; padding: 24px; }
+                        @media print {
+                            body { padding: 0; }
+                            @page { size: A4; margin: 14mm; }
+                        }
+                    </style>
+                </head>
+                <body>
+                    ${cvContent}
+                    <script>
+                        window.onload = function() {
+                            setTimeout(function() {
+                                window.print();
+                            }, 500);
+                        };
+                    <\/script>
+                </body>
+                </html>
+            `);
+            printWin.document.close();
+        }
+
+        // Project Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-500', 'text-slate-950');
+                    b.classList.add('bg-slate-800', 'text-slate-300');
+                });
+                btn.classList.remove('bg-slate-800', 'text-slate-300');
+                btn.classList.add('bg-brand-500', 'text-slate-950');
+
+                const filterValue = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-category');
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Direct Email Handler
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('sender-name').value;
+            const type = document.getElementById('inquiry-type').value;
+            const message = document.getElementById('sender-message').value;
+            const subject = encodeURIComponent(`Portfolio & CV Inquiry: ${type} — ${name}`);
+            const body = encodeURIComponent(`Dear Abdurrauf,\n\n${message}\n\nBest regards,\n${name}`);
+            window.location.href = `mailto:hashimabdurrauf@gmail.com?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+</html>
